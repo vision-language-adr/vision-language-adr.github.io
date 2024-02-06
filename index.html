@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>VLADR: Vision and Language for
+            Autonomous Driving and Robotics</title>
+        <link rel="stylesheet" href="assets/css/Highlight-Clean.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/bulma.min.css">
+        <script type="module"
+            src="https://unpkg.com/@google/model-viewer@2.0.1/dist/model-viewer.min.js"></script>
+        <link rel="manifest" href="site.webmanifest">
+
+        <meta property="og:site_name" content="VLADR" />
+        <meta property="og:type" content="video.other" />
+        <meta property="og:title"
+            content="VLADR: Vision and Language for Autonomous Driving and Robotics" />
+        <meta property="og:description"
+            content="CVPR2024 Worshop VLADR: Vision and Language for Autonomous Driving and Robotics." />
+        <script type="module"
+            src="https://unpkg.com/@google/model-viewer@2.0.1/dist/model-viewer.min.js"></script>
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/codemirror.min.css">
+        <link rel="stylesheet" href="assets/css/app.css">
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/codemirror.min.js"></script>
+        <script src="assets/js/clipboard.min.js"></script>
+        <script src="assets/js/video_comparison.js"></script>
+        <script src="assets/js/app.js"></script>
+
+        <style>
+        .min-size-card {
+            min-height: 230px;
+            min-width: 180px;
+        }
+    </style>
+
+    </head>
+    <div>
+
+        <div class="highlight-clean" style="padding-bottom: 10px;">
+            <div class="container" style="max-width: 768px;">
+                <div class="row" id="title-row"
+                    style="max-width: 100%; margin: 0 auto; display: inline-block">
+                    <h1 class="col-md-12 text-center" id="title">
+                        <b>VLADR:</b> <br> Neural Fields for Autonomous <br>Driving
+                        and Robotics <br>
+                        <h3 class="col-md-12 text-center">
+                            CVPR 2024 Workshop, Seattle WA, USA <br>
+                        </h3>
+                    </h1>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <ul class="nav nav-pills nav-justified">
+                            <li>
+                                <a href="#title">
+                                    <h4><strong>Home</strong></h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#call4paper">
+                                    <h4><strong>Call for papers</strong></h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#speakers">
+                                    <h4><strong>Invited Speakers</strong></h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#schedule">
+                                    <h4><strong>Schedule</strong></h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#organizers">
+                                    <h4><strong>Organizers</strong></h4>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 768px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Introduction</h2>
+                    <p class="text-justify">
+
+                        The contemporary discourse in technological advancement
+                        underscores the increasingly intertwined roles of vision
+                        and language processing, especially within the realms of
+                        autonomous driving and robotics. The necessity for this
+                        symbiosis is apparent when considering the multifaceted
+                        dynamics of real-world environments. An autonomous
+                        vehicle, for instance, operating within the framework of
+                        urban locales should not merely rely on its visual
+                        sensors for pedestrian detection, but must also
+                        interpret and act upon auditory signals, like vocalized
+                        warnings. Similarly, robots that integrate visual data
+                        with linguistic context promise more adaptive
+                        functionalities, particularly in diverse settings.
+
+                        This workshop is expected to spotlight the intricate
+                        arena of data-centric autonomous driving, emphasizing
+                        vision-based techniques. Central to our discussions will
+                        be topics like vision and language for autonomous
+                        driving, language-driven perception, and simulation. We
+                        will delve into the nuanced realms of vision and
+                        language representation learning and explore the future
+                        of multimodal motion prediction and planning in
+                        robotics. Recognizing the rapid expansion of this field,
+                        the introduction of new datasets and metrics for
+                        multimodal learning will also be on our agenda. Equally
+                        paramount are the discussions on privacy concerns
+                        associated with multimodal data. Moreover, our emphasis
+                        will firmly rest on safety, ensuring that systems are
+                        adept at correctly interpreting and acting on both
+                        visual and linguistic inputs, thereby preventing
+                        potential mishaps in real-world scenarios.
+
+                        Through a comprehensive examination of these topics,
+                        this workshop seeks to foster a deeper academic
+                        understanding of the intersection between vision and
+                        language in autonomous systems. By convening experts
+                        from interdisciplinary fields, our objective is to
+                        decipher current state-of-the-art methodologies, address
+                        challenges, and chart avenues for future endeavors,
+                        ensuring our findings resonate within both academic and
+                        industrial communities.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="container" style="max-width: 768px;">
+            <hr class="divider" />
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 id="call4paper">Call for Papers</h2>
+                    <div class="content">
+                        <p class="text-justify">
+                            The CVPR 2024 Vision and Language for Autonomous
+                            Driving and Robotics
+                            Workshop (<u><a
+                                    href=https://vladr.github.io>vladr.github.io</a></u>)
+                            is expected to center around data-centric autonomous
+                            driving, with a particular focus on vision-based
+                            methods.
+                        </p>
+                        <p> This workshop is intended to:</p>
+                        <ul>
+                            <li>Explore potential areas in robotics that vision
+                                and language could help
+                            </li>
+                            <li>Encourage the communication and collaboration of
+                                vision and language for
+                                autonomous agents
+                            </li>
+                            <li>Provide an opportunity for CVPR community to
+                                discuss this exciting and growing area of
+                                multimodal representations
+                            </li>
+                        </ul>
+                        <p class="text-justify">
+                            We welcome paper submissions on all topics related
+                            to neural fields for autonomous driving and
+                            robotics, including but not limited to:
+                        </p>
+                        <ul>
+                            <li>Vision and language for autonomous driving</li>
+                            <li>Language-driven perception</li>
+                            <li>Language-driven sensor and traffic simulation</li>
+                            <li>Vision and language representation learning</li>
+                            <li>Multimodal motion prediction and planning for
+                                robotics</li>
+                            <li>New datasets and metrics for multimodal learning</li>
+                            <li>Safety: Ensuring that systems can correctly
+                                interpret and act upon visual and linguistic
+                                inputs in real-world situations to prevent
+                                accidents</li>
+                            <li>Language agents for robotics</li>
+                            <li>Language-based scene understanding for driving
+                                scenarios</li>
+                            <li>Multi-modal fusion for end-to-end autonomous
+                                driving</li>
+                            <li>Large-Language-Models (LLMs) as task planner</li>
+                            <li>Other applications of LLMs to driving and
+                                robotics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 id="author_instruction">Style and Author Instructions</h3>
+                    <div class="content">
+                        <ul>
+                            <li><strong>Paper Length:</strong>
+                                We ask authors to use the official CVPR2024
+                                template and limit submissions to 4-8 pages
+                                excluding references.
+                            </li>
+                            <li><strong>Dual Submissions:</strong>
+                                The workshop is non-archival. In addition, in
+                                light of the new single-track policy of CVPR
+                                2024, we strongly encourage papers accepted to
+                                CVPR 2024 to present at our workshop.
+                            </li>
+                            <li><strong>Presentation Forms:</strong>
+                                All accepted papers will get poster
+                                presentations during the workshop; selected
+                                papers will
+                                get oral presentations.
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="text-justify">
+                        All submissions should anonymized. Papers with more than
+                        4 pages
+                        (excluding references) will be reviewed as long papers,
+                        and papers with
+                        more than 8 pages (excluding references) will be
+                        rejected without
+                        review. Supplementary material is optional with
+                        supported formats: pdf, mp4 and zip.
+                        All papers that were not previously presented in a major
+                        conference,
+                        will be peer-reviewed by three experts in the
+                        field in a double-blind manner. In case you are
+                        submitting a
+                        previously accepted conference paper, please also attach
+                        a copy of the
+                        acceptance notification email in the supplementary
+                        material documents.
+                    </p>
+                    <p>
+                        All submissions should adhere to the <a
+                            href="https://cvpr.thecvf.com/Conferences/2024/AuthorGuidelines">CVPR
+                            2024 author
+                            guidelines</a>.
+                    </p>
+                    <p>
+                        <strong>Submission Portal: </strong><a
+                            href="https://cmt3.research.microsoft.com/VLADR2024/Submission/Index">https://cmt3.research.microsoft.com/VLADR2024/Submission/Index</a>
+                    </p>
+                    <p><strong>Paper Review Timeline:</strong>
+                        <table class="table">
+                            <tr>
+                                <th scope="col">Paper Submission and
+                                    supplemental material deadline</th>
+                                <td>March 15th, 2024 (PST)</td>
+                            </tr>
+                            <tr>
+                                <th scope="col">Notification to authors</th>
+                                <td>March 31th, 2024 (PST) </td>
+                            </tr>
+                            <tr>
+                                <th scope="col">Camera ready deadline</th>
+                                <td>April 14th, 2024 (PST) </td>
+                            </tr>
+                        </table>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="container" style="max-width: 768px;">
+            <hr class="divider" />
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 id="speakers">Invited Speakers</h2>
+                    <a href="https://people.eecs.berkeley.edu/~malik/">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="columns is-vcentered">
+                                    <div class="column is-one-quarter">
+                                        <figure class="image is-128x128">
+                                            <img class="is-rounded"
+                                                src="https://people.eecs.berkeley.edu/~malik/malik-color1.jpg"
+                                                alt="Jitendra Mali">
+                                        </figure>
+                                    </div>
+                                    <div class="column">
+                                        <p class="title is-3">Jitendra Malik</p>
+                                        <p class="subtitle is-5">Professor at UC
+                                            Berkeley</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    Jitendra Malik received the B.Tech degree in
+                                    Electrical Engineering from Indian Institute
+                                    of Technology, Kanpur in 1980 and the PhD
+                                    degree in Computer Science from Stanford
+                                    University in 1985. In January 1986, he
+                                    joined the university of California at
+                                    Berkeley, where he is currently the Arthur
+                                    J. Chick Professor in the Department of
+                                    Electrical Engineering and Computer
+                                    Sciences. He is also on the faculty of the
+                                    department of Bioengineering, and the
+                                    Cognitive Science and Vision Science groups.
+                                    During 2002-2004 he served as the Chair of
+                                    the Computer Science Division, and as the
+                                    Department Chair of EECS during 2004-2006 as
+                                    well as 2016-2017. In 2018 and 2019, he
+                                    served as Research Director and Site Lead of
+                                    Facebook AI Research in Menlo Park. Prof.
+                                    Malik's research group has worked on many
+                                    different topics in computer vision,
+                                    computational modeling of human vision,
+                                    computer graphics and the analysis of
+                                    biological images. Several well-known
+                                    concepts and algorithms arose in this
+                                    research, such as anisotropic diffusion,
+                                    normalized cuts, high dynamic range imaging,
+                                    shape contexts and R-CNN. He has mentored
+                                    more than 70 PhD students and postdoctoral
+                                    fellows.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <br>
+                    <a href="https://people.eecs.berkeley.edu/~trevor/">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="columns is-vcentered">
+                                    <div class="column is-one-quarter">
+                                        <figure class="image is-128x128">
+                                            <img class="is-rounded"
+                                                src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=bh-uRFMAAAAJ&citpid=3"
+                                                alt="Trevor Darrell">
+                                        </figure>
+                                    </div>
+                                    <div class="column">
+                                        <p class="title is-3">Trevor Darrell</p>
+                                        <p class="subtitle is-5">Professor at UC
+                                            Berkeley</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    Prof. Darrell is on the faculty of the CS
+                                    and EE Divisions of the EECS Department at
+                                    UC Berkeley. He founded and co-leads
+                                    Berkeley's Berkeley Artificial Intelligence
+                                    Research (BAIR) lab, the Berkeley DeepDrive
+                                    (BDD) Industrial Consortia, and the recently
+                                    launched BAIR Commons program in partnership
+                                    with Facebook, Google, Microsoft, Amazon,
+                                    and other partners. He also was Faculty
+                                    Director of the PATH research center at UC
+                                    Berkeley, and led the Vision group at the
+                                    UC-affiliated International Computer Science
+                                    Institute in Berkeley from 2008-2014. Prior
+                                    to that, Prof. Darrell was on the faculty of
+                                    the MIT EECS department from 1999-2008,
+                                    where he directed the Vision Interface
+                                    Group. He was a member of the research staff
+                                    at Interval Research Corporation from
+                                    1996-1999, and received the S.M., and PhD.
+                                    degrees from MIT in 1992 and 1996,
+                                    respectively. He obtained the B.S.E. degree
+                                    from the University of Pennsylvania in 1988.
+
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <br>
+                    <a
+                        href="https://scholar.google.com/citations?user=T04c3fwAAAAJ&hl=en">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="columns is-vcentered">
+                                    <div class="column is-one-quarter">
+                                        <figure class="image is-128x128">
+                                            <img class="is-rounded"
+                                                src="https://media.licdn.com/dms/image/C5103AQGgyFXPG8iOtQ/profile-displayphoto-shrink_200_200/0/1516352851340?e=2147483647&v=beta&t=AAv2DypOEXL0_ykJgAgW6yazKhijqE5W8EmQZPUH8F8"
+                                                alt="Dragomir Anguelov">
+                                        </figure>
+                                    </div>
+                                    <div class="column">
+                                        <p class="title is-3">Dragomir Anguelov</p>
+                                        <p class="subtitle is-5">Distinguished
+                                            Researcher at Waymo</p>
+                                    </div>
+                                </div>
+                                <p class="text-justify">
+                                    Drago Anguelov is a Principal Scientist at
+                                    Waymo, developing and applying machine
+                                    learning methods for autonomous vehicle
+                                    perception and, more generally, in computer
+                                    vision and robotics. He is an expert in
+                                    machine learning, with applications to
+                                    computer vision, robotics, and computer
+                                    graphics.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <br>
+                    <a href="https://ai.stanford.edu/~cbfinn/">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="columns is-vcentered">
+                                    <div class="column is-one-quarter">
+                                        <figure class="image is-128x128">
+                                            <img class="is-rounded"
+                                                src="https://ai.stanford.edu/~cbfinn/_files/sail_headshot_left_facing_crop.jpg"
+                                                alt="Chelsea Finn">
+                                        </figure>
+                                    </div>
+                                    <div class="column">
+                                        <p class="title is-3">Chelsea Finn</p>
+                                        <p class="subtitle is-5"> Assistant
+                                            Professor at Stanford University</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    Chelsea Finn is an Assistant Professor in
+                                    Computer Science and Electrical Engineering
+                                    at Stanford University. Chelsea is
+                                    interested in the capability of robots and
+                                    other agents to develop broadly intelligent
+                                    behavior through learning and interaction.
+                                    Chelsea also spent time at Google as a part
+                                    of the Google Brain team.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <br>
+                    <a href="https://fxia22.github.io/">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="columns is-vcentered">
+                                    <div class="column is-one-quarter">
+                                        <figure class="image is-128x128">
+                                            <img class="is-rounded"
+                                                src="https://fxia22.github.io/assets/img/feixia.jpg"
+                                                alt="Fei Xia">
+                                        </figure>
+                                    </div>
+                                    <div class="column">
+                                        <p class="title is-3">Fei Xia</p>
+                                        <p class="subtitle is-5">Research
+                                            Scientist at Google Deepmind
+                                            Robotics</p>
+                                    </div>
+                                </div>
+                                <p class="text-justify">
+                                    Fei Xia is a Research Scientist at Google
+                                    Research where he works on the Robotics
+                                    team. He received his PhD degree from the
+                                    Department of Electrical Engineering,
+                                    Stanford University. He was co-advised by
+                                    Silvio Savarese in SVL and Leonidas Guibas.
+                                    His mission is to build intelligent embodied
+                                    agents that can interact with complex and
+                                    unstructured real-world environments, with
+                                    applications to home robotics. He has been
+                                    approaching this problem from 3 aspects: 1)
+                                    Large-scale and transferrable simulation for
+                                    Robotics. 2) Learning algorithms for
+                                    long-horizon tasks. 3) Combining geometric
+                                    and semantic representation for
+                                    environments. Most recently, He has been
+                                    exploring using foundation models for robot
+                                    decision-making.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <br>
+                    <a href="https://homes.cs.washington.edu/~fox/">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="columns is-vcentered">
+                                    <div class="column is-one-quarter">
+                                        <figure class="image is-128x128">
+                                            <img class="is-rounded"
+                                                src="http://homes.cs.washington.edu/~fox/wp-content/uploads/2017/10/Fox-326x408.jpg"
+                                                alt="Dieter Fox">
+                                        </figure>
+                                    </div>
+                                    <div class="column">
+                                        <p class="title is-3">Dieter Fox</p>
+                                        <p class="subtitle is-5">Professor at
+                                            University of Washington</p>
+                                    </div>
+                                </div>
+                                <p class="text-justify">
+                                    Prof. Fox is a Professor in the Allen School
+                                    of Computer Science & Engineering at the
+                                    University of Washington. He grew up in
+                                    Bonn, Germany, and received my Ph.D. in 1998
+                                    from the Computer Science Department at the
+                                    University of Bonn. He joined the UW faculty
+                                    in the fall of 2000. He is sharing my time
+                                    between UW and NVIDIA, where he is leading
+                                    the Robotics Research Lab in Seattle. His
+                                    research interests are in robotics,
+                                    artificial intelligence, and state
+                                    estimation. He is the head of the UW
+                                    Robotics and State Estimation Lab RSE-Lab.
+                                    He is a Fellow of the AAAI, ACM, and IEEE,
+                                    recipient of the IEEE RAS Pioneer Award and
+                                    the IJCAI John McCarthy Award, and served as
+                                    an editor of the IEEE Transactions on
+                                    Robotics.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <br>
+                    <a href="https://jamie.shotton.org/">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="columns is-vcentered">
+                                    <div class="column is-one-quarter">
+                                        <figure class="image is-128x128">
+                                            <img class="is-rounded"
+                                                src="https://jamie.shotton.org/author/jamie-shotton/avatar_hubcfcd825cec4221ac68bf02950f61648_116633_270x270_fill_q75_lanczos_center.jpg"
+                                                alt="Jamie Shotton">
+                                        </figure>
+                                    </div>
+                                    <div class="column">
+                                        <p class="title is-3">Jamie Shotton</p>
+                                        <p class="subtitle is-5">Chief Scientist
+                                            at Wayve</p>
+                                    </div>
+                                </div>
+                                <p class="text-justify">
+                                    As head of Wayve's Discovery department,
+                                    Jamie leads three distinct areas: the Scaled
+                                    Intelligence team, which is building our
+                                    core foundation models for autonomous
+                                    driving; the Science group, where he's
+                                    guiding his research teams to invest in new
+                                    ideas that have the potential to become
+                                    game-changing technological advances for the
+                                    company; and the Simulation group, where
+                                    he's driving the development of simulation
+                                    tools and technologies critical to unlocking
+                                    safe and adaptable autonomous driving
+                                    through off-road measurement. Jamie has been
+                                    at the forefront of applied AI research for
+                                    the past 20 years. Before joining Wayve,
+                                    Jamie was Partner Director of Science at
+                                    Microsoft and Head of the Mixed Reality & AI
+                                    Labs. While at Microsoft, Jamie shipped
+                                    foundational features for Microsoft's Kinect
+                                    (Microsoft's line of motion sensing input
+                                    devices) and the hand- and eye-tracking that
+                                    enable HoloLens 2's interaction model (smart
+                                    glasses). Jamie has a PhD in computer vision
+                                    from the University of Cambridge and has
+                                    received multiple Best Paper and Best Demo
+                                    Awards at top-tier academic conferences. He
+                                    was elected a Fellow of the Royal Academy of
+                                    Engineering in 2021.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 768px;">
+            <hr class="divider" />
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 id="schedule">Schedule</h2>
+                    <div class="content">
+                        <div class="row">
+                            <div class="col">
+                                <div class="col-xs-12">
+                                    <table class="table  table-striped">
+                                        <tr>
+                                            <td>Opening remarks and welcome</td>
+                                            <td>09:00 AM - 09:15 AM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Keynote talk (TBD)</td>
+                                            <td>09:15 AM - 09:45 AM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Keynote talk (TBD)</td>
+                                            <td>10:15 AM - 10:45 AM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Keynote talk (TBD)</td>
+                                            <td>11:00 AM - 11:30 AM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Poster Session & Lunch</td>
+                                            <td>11:30 AM - 01:30 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Keynote talk (TBD)</td>
+                                            <td>01:30 PM - 02:00 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Keynote talk (TBD) </td>
+                                            <td>02:15 PM - 02:45 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Keynote talk (TBD)</td>
+                                            <td>03:00 PM - 03:40 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Keynote talk (TBD)</td>
+                                            <td>04:15 PM - 05:00 PM</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="container" style="max-width: 768px;">
+            <hr class="divider" />
+            <div class="row">
+                <h2 id="organizers">Organizers</h2><br>
+                <div class="columns is-centered">
+                    <div
+                        class="column col-md-3 col-sm-3 col-xs-4 text-center center-block">
+                        <a href="https://sites.google.com/site/boyilics/home/">
+                            <div class="card min-size-card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img class="is-rounded"
+                                            src="https://vision.cornell.edu/se3/wp-content/uploads/2021/04/boyi2.jpeg"
+                                            alt="Boyi Li"
+                                            style="max-width: 150px; max-height: 150px;  margin: auto;">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content"
+                                            style="overflow-x: unset;">
+                                            <p class="title is-3">Danfei Xu</p>
+                                            <p class="subtitle is-5">UC Berkeley
+                                                &
+                                                Nvidia</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div
+                        class="column col-md-3 col-sm-3 col-xs-4 text-center center-block">
+                        <a href="https://yuewang.xyz/">
+                            <div class="card min-size-card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img class="is-rounded"
+                                            src="assets/images/organizers/yue_wang.png"
+                                            alt="Yue Wang"
+                                            style="max-width: 150px; max-height: 150px;  margin: auto;">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content"
+                                            style="overflow-x: unset;">
+                                            <p class="title is-3">Yue Wang</p>
+                                            <p class="subtitle is-5">USC &
+                                                Nvidia</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div
+                        class="column col-md-3 col-sm-3 col-xs-4 text-center center-block">
+                        <a href="https://jiawei-yang.github.io/">
+                            <div class="card min-size-card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img class="is-rounded"
+                                            src="assets/images/organizers/jiawei_yang.jpeg"
+                                            alt="Jiawei Yang"
+                                            style="max-width: 150px; max-height: 150px;  margin: auto;">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content"
+                                            style="overflow-x: unset;">
+                                            <p class="title is-3">Jiawei Yang</p>
+                                            <p class="subtitle is-5">USC</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div
+                        class="column col-md-3 col-sm-3 col-xs-4 text-center center-block">
+                        <a href="https://pointscoder.github.io/">
+                            <div class="card min-size-card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img class="is-rounded"
+                                            src="assets/images/organizers/jiageng.jpg"
+                                            alt="Jiageng Mao"
+                                            style="max-width: 150px; max-height: 150px;  margin: auto;">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content"
+                                            style="overflow-x: unset;">
+                                            <p class="title is-3">Jiageng Mao</p>
+                                            <p class="subtitle is-5">USC</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="columns is-centered">
+
+                    <div
+                        class="column col-md-3 col-sm-3 col-xs-4 text-center center-block">
+                        <a href="https://www.belongielab.org/">
+                            <div class="card min-size-card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img class="is-rounded"
+                                            src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=chD5XxkAAAAJ&citpid=3"
+                                            alt="Serge Belongie"
+                                            style="max-width: 150px; max-height: 150px;  margin: auto;">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content"
+                                            style="overflow-x: unset;">
+                                            <p class="title is-3">Serge Belongie</p>
+                                            <p class="subtitle is-5">University
+                                                of Copenhagen & Pioneer Centre
+                                                for Artificial Intelligence</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div
+                        class="column col-md-3 col-sm-3 col-xs-4 text-center center-block">
+                        <a href="https://www.cs.utoronto.ca/~fidler/">
+                            <div class="card min-size-card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img class="is-rounded"
+                                            src="https://vectorinstitute.ai/wp-content/uploads/2023/02/vi_fidler_sanja-nltmuk31qqki2any420y7t9bfh03lucgofmh5uzifg-1600x0-c-default.jpg"
+                                            alt="Sanja Fidler"
+                                            style="max-width: 150px; max-height: 150px;  margin: auto;">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content"
+                                            style="overflow-x: unset;">
+                                            <p class="title is-3">Sanja Fidler</p>
+                                            <p class="subtitle is-5">University
+                                                of Toronto & NVIDIA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div
+                        class="column col-md-3 col-sm-3 col-xs-4 text-center center-block">
+                        <a href="https://web.stanford.edu/~pavone/">
+                            <div class="card min-size-card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img class="is-rounded"
+                                            src="assets/images/organizers/marco_pavone.jpeg"
+                                            alt="Marco Pavone"
+                                            style="max-width: 150px; max-height: 150px;  margin: auto;">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content"
+                                            style="overflow-x: unset;">
+                                            <p class="title is-3">Marco Pavone</p>
+                                            <p class="subtitle is-5">Stanford &
+                                                Nvidia</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div
+            class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-md-block">
+            <a class="btn btn-primary me-md-2" role="button" href="#title">Top</a>
+        </div>
+    </body>
+
+</html>
